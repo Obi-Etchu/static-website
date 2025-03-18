@@ -1,0 +1,581 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px gainsboro;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+ul {
+    cursor: pointer;
+}
+
+.left {
+    padding-left: 3px;
+}
+
+.left-nav {
+    /* Add any necessary styles here */
+}
+
+nav {
+    /* Adjusted the flex display for navigation */
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px;
+    margin-left: 0;
+}
+
+.email {
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+.email:hover {
+    background-color: rgb(240, 235, 235);
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -25%;
+    background-color: rgb(2, 2, 20);
+    width: 25%;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease; /* Ensure smooth transition */
+    z-index: 999;
+    overflow-y: auto;
+}
+.notifications{
+
+    position: fixed;
+    top: 0;
+    right: -25%;
+    background-color: white;
+    width: 25%;
+    color: black;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease; /* Ensure smooth transition */
+    z-index: 999;
+    overflow-y: auto;
+}
+.pic{
+    width: 200px;
+    margin: auto;
+   align-items: center;
+}
+
+.notifications.active{
+    right: 0%;
+}
+
+.letter-head{
+box-shadow: 5px 5px 5px gainsboro;
+width: 100%;
+}
+
+/* Active state for the sidebar */
+.sidebar.active {
+    left: 0;
+}
+
+/* Main content adjustment */
+.main-content {
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+    padding: 50px;
+}
+
+.main-content.shifted {
+    margin-left: 25%; /* Pushes content right when sidebar opens */
+}
+.contain.shifted{
+    margin-left: 25%;
+}
+.main-content.shifted {
+    margin-left: 25%; }
+/* Sidebar content */
+.sidebar p {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Set icon styles */
+.set {
+    position: fixed;
+    width: 70px;
+    height: 30px;
+    right: 20px;
+    bottom: 30px;
+    background: rgb(0, 0, 67);
+    border-radius: 50%;
+}
+
+.set svg {
+    color: black;
+    padding: 20px;
+}
+.section{
+   /* justify-content: space-between; */
+   margin-top: 50px;
+    display: flex;
+  
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 10px;
+    width: 23%;
+    height: 225px;
+    /* margin: auto; */
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 30px gainsboro ;
+}
+
+.content{
+    /* justify-content: space-between; */
+}
+.purple{
+   
+    width: 40px;
+    background-color:rgba(135, 207, 235, 0.583);
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+   margin-top: 3px;
+}
+.purple svg{
+color: blueviolet;
+padding: 5%;
+}
+.pink{
+    width: 40px;
+    background-color:rgba(240, 128, 128, 0.319);
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+   margin-top: 3px;
+}
+.blue{
+    width: 40px;
+    background-color:rgba(135, 207, 235, 0.583);
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+   margin-top: 3px;
+}
+.point{
+    margin: auto;
+    align-items: center;
+    background-color:rgba(135, 207, 235, 0.583);
+    width: 60%;
+    padding: 8px;
+    border-radius: 20px;
+}
+.point:hover{
+    background-color:rgb(14, 163, 222);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+.point1{
+    margin: auto;
+    align-items: center;
+    background-color: rgba(144, 238, 144, 0.507);
+    width: 60%;
+    padding: 8px;
+    border-radius: 20px;
+}
+.point1:hover{
+    background-color: rgb(14, 228, 14);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+.point2{
+    margin: auto;
+    align-items: center;
+    background-color:rgba(240, 128, 128, 0.319);
+    width: 60%;
+    padding: 8px;
+    border-radius: 20px;
+}
+.point2:hover{
+    background-color:rgb(246, 4, 4);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+.point3{
+    margin: auto;
+    align-items: center;
+    background-color:rgba(221, 160, 221, 0.556);
+    width: 60%;
+    padding: 8px;
+    border-radius: 20px;
+}
+.point3:hover{
+    background-color:rgb(236, 16, 236);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+.sec2{
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+.h6{
+  margin-top: 40px;
+  margin-left: 0%;
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+.stuff{
+    display: flex;
+    gap: 40px;
+}
+.stuff1 p{
+    display: flex;
+    
+}
+
+.dets{
+    display: flex;
+   justify-content: space-between;
+   box-shadow: 5px 5px 10px gainsboro;
+   padding: 20px;
+  border-bottom-left-radius: 15px ;
+  border-bottom-right-radius: 15px ;
+}
+.det{
+    display: flex;
+    gap: 25px;
+}
+.date{
+    float: right;
+}
+
+.stuff1 img{
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.stuff2 img{
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.stuff-two{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+/* @media (max-width:600px) {
+
+    .contain {
+        display: flex;
+        justify-content:none;
+        align-items: center;}
+    .section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        margin-right: 0px;
+        margin-left: 40px;
+        gap: 30px;
+        
+    }
+    .one{
+        width: 250px;
+        /* margin: auto;
+        text-align: center; */
+    /* }
+    .sidebar{
+        height: 100%;
+       
+    }
+    .sidebar.active{
+        width: 100%;
+    }
+    .stuff-two{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+        margin-right: 30px;
+    }
+    .stuff{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-right: 30px;
+    }
+    .email{
+        display: none;
+    }
+    .det{
+        width: 100%;
+    }
+    .stuff1 img{
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       
+        justify-content: center;
+    
+    }
+    .user{
+        display: none;
+    }
+    .stuff2 img{
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: auto;
+        justify-content: center;
+    }
+
+.div3{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.analytics{
+    display: none;
+}
+.start{
+    display: none;
+}
+
+.line-chart{
+    position: relative;
+    width: 600%;
+    height: 300px;
+} 
+    
+}*/
+
+
+/* @media (max-width:600px) {
+    .two-lines{
+        display: flex;
+        flex-direction: column;
+    }
+    .linechart1{
+        position: relative;
+        width: 20%;
+        height: 200px;
+        
+    }
+    .linechart{
+        position: relative;
+        width: 20%;
+        height: 200px;
+      
+    }
+    
+    .heatmapChart{
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .start, .start1{
+        display: none;
+    }
+    .fill-chart{
+        position: relative;
+        width: 400px;
+        height: 300px;
+    }
+    .notifications{
+        height: 100%;
+    }
+    .notifications.active{
+       
+        width: 100%;
+    }
+    
+} */
+
+/* @media (max-width:600px) {
+    .div4{
+        position: relative;
+        width: 200%;
+        height: 200px;
+    }
+    .start0{
+        position: relative;
+        width: 200%;
+        height: 200px;
+    }
+} */
+
+.div3{
+    padding: 50px;
+    box-shadow: 10px 10px 20px gainsboro;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 450px;
+  
+}
+.start{
+    display: flex;
+    justify-content: space-between;
+}
+.charts-sec{
+    padding-top: 30px;
+    display: flex;
+   gap: 50px;
+}
+.line-chart{
+    width: 60%;
+}
+.analytics{
+    margin: auto;
+    align-items: center;
+}
+.sub{
+    text-align: center;
+}
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .chart2-dets{
+    display: flex;
+    justify-content: space-between;
+ 
+    padding: 10px;
+  }
+  .area{
+    padding: 50px;
+    box-shadow: 10px 10px 20px gainsboro;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 500px;
+  
+  }
+
+  .fill-chart{
+    height: 350px;
+    width: 80%;
+
+  }
+  .start1{
+    display: flex;
+    justify-content: space-between;
+  }
+   .div4{
+    padding: 20px;
+    box-shadow: 10px 10px 20px gainsboro;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 300px;
+    width: 100rem;
+  }
+ 
+   .start0{
+    padding: 20px;
+    box-shadow: 10px 10px 20px gainsboro;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 300px;
+    width: 100rem;
+   }
+   .two-lines{
+    display: flex;
+    gap: 50px;
+
+   }
+   .linechart1{
+    /* margin: auto;
+    justify-content: center; */
+    position: relative;
+    width: 100%;
+    height: 400px;
+   }
+   .linechart{
+    position: relative;
+    width: 100%;
+    height: 400px
+   }
+
+
+
+
+
+   footer{
+    height: 65px;
+width: 100%;
+background-color: rgb(1, 1, 34);
+
+   }
+
+   footer p{
+    color: white;
+   }
+   footer button{
+    padding: 10px;
+    
+   }
+   .foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   }
+   .foot button{
+   background-color: goldenrod;
+   border: none;
+   border-radius: 5px;
+   }
+   .heatmapChart{
+    margin: auto;
+    justify-content: center;
+    width: 90%;
+    height:30% ;
+    /* padding: 20px; */
+    box-shadow: 10px 10px 20px gainsboro;
+    border-radius: 20px;
+    margin-top: 40px;
+   }
+   .heat{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+   }
+   .heat2{
+    height: 350px;
+   }

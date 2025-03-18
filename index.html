@@ -1,0 +1,401 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="sidebar" id="sidebar">
+            <div class="item">
+            <p onclick="closeSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></p> 
+            <p>MATX</p>
+            <br>
+            <p>Dashboard</p>
+            <p>Analytics</p>
+            <p>Inventory Management</p>
+            <p>PAGES</p>
+            <p>Customers</p>
+            <p>Products</p>
+            <p>Orders</p>
+            <p>Help Center</p>
+            <p>Pricing</p>
+            <p>User List</p>
+            <p>Forms</p>
+            <p>Matx List</p>
+            <p>SessionAuth</p>
+            <p>Left Siderbar Card</p>
+            <p>user Profile</p>
+            <p>Account</p>
+        </div>
+</div>
+
+<div class="notifications" id="notifications">
+   <div class="inbox">
+    <div class="letter-head">
+    <p onclick="hideInbox()" style="display: flex; gap: 10px;"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>Notifications</p>
+</div>
+   <img src="Online article-cuate.png" alt="non" class="pic">
+   </div>
+</div>
+
+
+<div class="main-content" id="mainContent">
+        <div class="contain">
+            <nav class="left-nav">
+                <ul class="left">
+                    <li onclick="openSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                    <li ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/></svg></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></li>
+                    <li onclick="showNotifications()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M80-560q0-100 44.5-183.5T244-882l47 64q-60 44-95.5 111T160-560H80Zm720 0q0-80-35.5-147T669-818l47-64q75 55 119.5 138.5T880-560h-80ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m480-560-56-56 63-64H320v-80h167l-64-64 57-56 160 160-160 160ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg></li>
+                    <div class="email" style="display: flex;" ><p class="user">Hi <b>jason@ui-lib.com</b> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg></p></div>
+                </ul>
+        </nav>
+            </div>
+    
+            <div class="section">
+                <div class="one">
+                    <div class="content">
+                    <div class="purple"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg></div>
+                    <br>
+                    <h1>30.2k</h1>
+                    <p>Total followers</p>
+                    <br>
+                     <div class="point">12.6%</div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="content">
+                    <div class="green"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M419-80q-28 0-52.5-12T325-126L107-403l19-20q20-21 48-25t52 11l74 45v-328q0-17 11.5-28.5T340-760q17 0 29 11.5t12 28.5v472l-97-60 104 133q6 7 14 11t17 4h221q33 0 56.5-23.5T720-240v-160q0-17-11.5-28.5T680-440H461v-80h219q50 0 85 35t35 85v160q0 66-47 113T640-80H419ZM167-620q-13-22-20-47.5t-7-52.5q0-83 58.5-141.5T340-920q83 0 141.5 58.5T540-720q0 27-7 52.5T513-620l-69-40q8-14 12-28.5t4-31.5q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 17 4 31.5t12 28.5l-69 40Zm335 280Z"/></svg></div>
+                    <br>
+                    <h1>9.2k</h1>
+                    <p>impressions</p>
+                    <br>
+                    <div class="point1">58.6%</div>
+                </div>
+                </div>
+                <div class="one">
+                    <div class="content">
+                    <div class="pink"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M204-150q-57-55-90.5-129.5T80-440q0-83 31.5-156T197-723q54-54 127-85.5T480-840q83 0 156 31.5T763-723q54 54 85.5 127T880-440q0 86-33.5 161T756-150l-56-56q46-44 73-104.5T800-440q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 69 27 129t74 104l-57 57Zm113-113q-35-33-56-78.5T240-440q0-100 70-170t170-70q100 0 170 70t70 170q0 53-21 99t-56 78l-57-57q25-23 39.5-54t14.5-66q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 36 14.5 66.5T374-320l-57 57Zm163-97q-33 0-56.5-23.5T400-440q0-33 23.5-56.5T480-520q33 0 56.5 23.5T560-440q0 33-23.5 56.5T480-360Z"/></svg></div>
+                    <br>
+                    <h1>1.2k</h1>
+                    <p>connect</p>
+                    <br>
+                    <div class="point2">0.56%</div>
+                </div>
+                </div>
+                <div class="one">
+                    <div class="content">
+                    <div class="blue"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-240q-17 0-28.5-11.5T240-280v-80h520v-360h80q17 0 28.5 11.5T880-680v600L720-240H280ZM80-280v-560q0-17 11.5-28.5T120-880h520q17 0 28.5 11.5T680-840v360q0 17-11.5 28.5T640-440H240L80-280Zm520-240v-280H160v280h440Zm-440 0v-280 280Z"/></svg></div>
+                    <br>
+                    <h1>18.2k</h1>
+                    <p>Rate view</p>
+                    <br>
+                    <div class="point3">0.56%</div>
+                </div>
+                </div>
+            </div>
+            <div class="sec2">
+              <p class="h6">Most <span style="color: skyblue;">Recent Media</span></p>
+            <div class="stuff">
+                  <div class="stuff1">
+                    <img src="sq-10.jpg" alt="house">
+                    <div class="dets">
+                        <div class="det">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>2.3k</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>900</p>
+                </div>
+                    <div class="date">
+                    <p>23 days ago</p>
+                  </div>
+                </div>
+                </div>
+                  <div class="stuff2">
+                    <img src="sq-11.jpg" alt="bulb">
+                    <div class="dets">
+                   <div class="det">
+                        <p style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>2.3k</p>
+                    
+                        <p style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>900</p>
+                    </div>
+                    <div class="date">
+                        <p>23 days ago</p>
+                    </div>
+                </div>
+                  </div>
+            </div>
+
+            <div class="stuff-two">
+                <div class="stuff1">
+                  <img src="sq-12.jpg" alt="house">
+                  <div class="dets">
+                      <div class="det">
+                  <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>2.3k</p>
+                  <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>900</p>
+              </div>
+                  <div class="date">
+                  <p>23 days ago</p>
+                </div>
+              </div>
+              </div>
+                <div class="stuff2">
+                  <img src="sq-13.jpg" alt="bulb">
+                  <div class="dets">
+                 <div class="det">
+                      <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>2.3k</p>
+                  
+                      <p style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>900</p>
+                  </div>
+                  <div class="date">
+                      <p>23 days ago</p>
+                  </div>
+              </div>
+                </div>
+          </div>
+          </div>
+        <div class="div3">
+            <div class="start">
+                <div>
+                  <h1>followers</h1>
+                </div>
+                <div>
+                 <p><b>...</b></p>
+                </div>
+            </div>
+            <hr style="width: 100%;">
+            <div class="charts-sec">
+                <div class="analytics">
+
+                    <div class="sub">
+                        <h1><span style="color: royalblue; margin:auto; text-align: center; font-size: xxx-large;">4,839</span></h1>
+                        <br>
+                        <p>Gained followers(last 365days)</p>
+                    </div>
+                    
+                    <br>
+                    <p style="color: gray;"><svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#5f6368" style="background-color: coral; border-radius:5px"><path d="M240-120v-240q0-33 23.5-56.5T320-440h320v-248l-64 64-56-56 160-160 160 160-56 56-64-64v248q0 33-23.5 56.5T640-360H320v240h-80Z"/></svg>You have a <span style="color: coral;">20% growth</span> compared to last year</p>
+                    <br>
+                    <p style="color: gray;"><svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#5f6368" style="background-color: rgba(0, 0, 255, 0.36); border-radius:5px"><path d="M240-120v-240q0-33 23.5-56.5T320-440h320v-248l-64 64-56-56 160-160 160 160-56 56-64-64v248q0 33-23.5 56.5T640-360H320v240h-80Z"/></svg>You have a reached <span style="color: blue;">10%</span> of your follower goal</p>
+                </div>
+                <div class="line-chart">
+                    <canvas id="lineChart" ></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="one">
+                <div class="content">
+                <div class="purple"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg></div>
+                <br>
+                <h1>30.2k</h1>
+                <p>Total followers</p>
+                <br>
+                 <div class="point">12.6%</div>
+                </div>
+            </div>
+            <div class="one">
+                <div class="content">
+                <div class="green"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M419-80q-28 0-52.5-12T325-126L107-403l19-20q20-21 48-25t52 11l74 45v-328q0-17 11.5-28.5T340-760q17 0 29 11.5t12 28.5v472l-97-60 104 133q6 7 14 11t17 4h221q33 0 56.5-23.5T720-240v-160q0-17-11.5-28.5T680-440H461v-80h219q50 0 85 35t35 85v160q0 66-47 113T640-80H419ZM167-620q-13-22-20-47.5t-7-52.5q0-83 58.5-141.5T340-920q83 0 141.5 58.5T540-720q0 27-7 52.5T513-620l-69-40q8-14 12-28.5t4-31.5q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 17 4 31.5t12 28.5l-69 40Zm335 280Z"/></svg></div>
+                <br>
+                <h1>9.2k</h1>
+                <p>impressions</p>
+                <br>
+                <div class="point1">58.6%</div>
+            </div>
+            </div>
+            <div class="one">
+                <div class="content">
+                <div class="pink"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M204-150q-57-55-90.5-129.5T80-440q0-83 31.5-156T197-723q54-54 127-85.5T480-840q83 0 156 31.5T763-723q54 54 85.5 127T880-440q0 86-33.5 161T756-150l-56-56q46-44 73-104.5T800-440q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 69 27 129t74 104l-57 57Zm113-113q-35-33-56-78.5T240-440q0-100 70-170t170-70q100 0 170 70t70 170q0 53-21 99t-56 78l-57-57q25-23 39.5-54t14.5-66q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 36 14.5 66.5T374-320l-57 57Zm163-97q-33 0-56.5-23.5T400-440q0-33 23.5-56.5T480-520q33 0 56.5 23.5T560-440q0 33-23.5 56.5T480-360Z"/></svg></div>
+                <br>
+                <h1>1.2k</h1>
+                <p>connect</p>
+                <br>
+                <div class="point2">0.56%</div>
+            </div>
+            </div>
+            <div class="one">
+                <div class="content">
+                <div class="blue"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-240q-17 0-28.5-11.5T240-280v-80h520v-360h80q17 0 28.5 11.5T880-680v600L720-240H280ZM80-280v-560q0-17 11.5-28.5T120-880h520q17 0 28.5 11.5T680-840v360q0 17-11.5 28.5T640-440H240L80-280Zm520-240v-280H160v280h440Zm-440 0v-280 280Z"/></svg></div>
+                <br>
+                <h1>18.2k</h1>
+                <p>Rate view</p>
+                <br>
+                <div class="point3">0.56%</div>
+            </div>
+            </div>
+        </div>
+
+         <div class="area">
+            <div class="chart2-dets">
+                <div>
+                 <p style="font-size: x-large;">Reach Impression History</p>
+                </div>
+                <div><b>
+                    ...
+                </b>
+                </div>
+            </div>
+            <hr>
+            <div class="fill-chart">
+            <canvas id="myAreaChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="one">
+                <div class="content">
+                    <p style="color: rgb(177, 177, 177);">Total followers</p>
+                <h1>30.2k</h1>
+                
+                <br>
+                 <div class="point">12.6%</div>
+                </div>
+            </div>
+            <div class="one">
+                <div class="content">
+                    <p  style="color: rgb(177, 177, 177);">impressions</p>
+                <h1>9.2k</h1>
+                
+                <br>
+                <div class="point1">58.6%</div>
+            </div>
+            </div>
+            <div class="one">
+                <div class="content">
+                
+                <p style="color: rgb(177, 177, 177);">connect</p>
+                <h1>1.2k</h1>
+                
+                <br>
+                <div class="point2">0.56%</div>
+            </div>
+            </div>
+            <div class="one">
+                <div class="content">
+                
+                <p  style="color: rgb(177, 177, 177);">Rate view</p>
+                <h1>18.2k</h1>
+               
+                <br>
+                <div class="point3">0.56%</div>
+            </div>
+            </div>
+        </div>
+<div class="two-lines">
+        <div class="div4">
+            <div class="start">
+                <div>
+                  <h1>Like history</h1>
+                </div>
+                <div>
+                 <p><b>...</b></p>
+                </div>
+            </div>
+            <hr style="width: 100%;">
+                <div class="linechart">
+                    <canvas id="myDualLineChart" ></canvas>
+                </div>
+            </div>
+<div class="start0">
+            <div class="start1">
+                <div>
+                  <h1>Comment</h1>
+                </div>
+                <div>
+                 <p><b>...</b></p>
+                </div>
+            </div>
+            <hr style="width: 100%;">
+                <div class="linechart1">
+                    <canvas id="twoLines"></canvas>
+                </div>
+
+            </div>
+            </div>
+      
+
+         <div class="heatmapChart">
+            <div class="heat">
+                <div >
+                <p>Posting Habits</p>
+                </div>
+                <div>
+                  <p>...</p>
+                </div>
+            </div>
+            <div class="heat2">
+            <canvas id="heatmapChart"></canvas>
+        </div>
+         </div>
+        
+          <!-- <div class="set"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg></div> -->
+   
+        </div>
+ 
+        
+
+    
+            <footer>
+                <div class="foot">
+
+               
+          <button>
+              Get MatX pro
+          </button>
+          <p>
+              Design and Developed by UI Lib
+          </p>
+        </div>
+      </footer>
+  
+  
+
+
+
+    <script >
+        function openSidebar() {
+             const sidebar = document.getElementById('sidebar');
+             const mainContent = document.getElementById('mainContent');
+             sidebar.classList.add('active');
+             mainContent.classList.add('shifted');
+         }
+ 
+         function closeSidebar() {
+             const sidebar = document.getElementById('sidebar');
+             const mainContent = document.getElementById('mainContent');
+             sidebar.classList.remove('active');
+             mainContent.classList.remove('shifted');
+         }
+
+         function showNotifications(){
+         const notifications = document.getElementById('notifications');
+         notifications.classList.add('active');
+         }
+
+         function hideInbox(){
+            const notifications = document.getElementById('notifications');
+            notifications.classList.remove('active')
+         }
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+     <script src="chart1.js"></script>
+     <!-- <script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js
+"></script> -->
+     <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+    <script src="chart4.js"></script>
+    <script src="chart5.js"></script>
+    </body>
+    </html>
